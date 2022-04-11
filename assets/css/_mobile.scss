@@ -1,0 +1,79 @@
+@media only screen and (max-width:426px) {
+
+  nav {
+    font-size: small;
+    padding: 13px;
+
+    .logo {
+      font-size: 13px;
+      margin-right: 6px;
+    }
+  }
+
+  .showcase {
+
+      .about-me{
+        font-size: small;
+      }
+
+    img {
+       display: none;
+    }
+  }
+
+  .box {
+    margin-right: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 570px) {
+
+    .showcase {
+      height:500px;
+
+        &-content {
+            text-align: center;
+    
+
+          h1 {
+            font-size: 30px;
+            margin-bottom: 23px;
+          }
+        }
+  
+        img {
+          display: none;
+        }
+    }
+
+    .heading {
+        font-size: 37px;
+       
+    }
+
+    .technology-stack {
+        padding: 3rem 23%;
+    }
+
+    .inventiveness {
+        padding: 4rem 3%;
+
+        h3 {
+          font-weight: 500;
+        }
+    }
+
+    .image{
+      display: none;
+    }
+    
+    .content p {
+        margin: 20px;
+    }
+
+    .footer-content h3 {
+        font-size: 35px;
+    }
+}   
+

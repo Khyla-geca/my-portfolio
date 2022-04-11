@@ -1,0 +1,32 @@
+@media only screen and (min-width: 570px) and (max-width: 810px) {
+
+    .showcase {
+        height: 500px;
+    
+        &-content {
+          text-align: center;
+
+          h1 {
+            font-size: 35px;
+            margin-bottom: 15px;
+          }
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .heading {
+      font-size: 50px;
+    }
+
+    section{
+        padding: 4rem 3%;
+    }
+
+    .content p {
+        margin: 20px;
+    }
+
+}

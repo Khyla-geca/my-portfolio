@@ -1,0 +1,225 @@
+@import "config";
+
+// _style.scss
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+  }
+
+  img {
+    width: 100%;
+  }
+
+a {
+  text-decoration: none;
+}
+
+section{
+  padding:5rem 10%;
+}
+
+.heading{
+  text-align: center;
+  font-size: 70px;
+  color: $primary-color;
+  margin-bottom: 3rem;
+  }
+
+footer {
+  background-color: $black;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: $white;
+}
+
+  .showcase {
+    @include set-background($primary-color);
+    height: 600px;
+  
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      ul {
+        display: flex;
+        list-style-type: none;
+      }
+  
+      li {
+        padding: 15px;
+      }
+  
+      a {
+        color: set-text-color($primary-color);
+      }
+  
+      a:hover {
+        color: $black;
+      }
+    }
+  
+    &-content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+  
+      img {
+        width: 41%;
+        padding-left: 60px;
+        border-radius: 33%;
+      }
+  
+      h1 {
+        font-size: 50px;
+        line-height: 1.2;
+      }
+
+      .about-me {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.9;
+        margin-top: .7em;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .technology-stack{
+    background-color: $secondary-color;
+  
+    .box-container{
+      @include grid(16rem);
+  
+      .box{
+        padding:2rem;
+        text-align: center;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        background: $black;
+  
+        &:hover{
+          background: $white;
+  
+          h3{
+            color:$black;
+          }
+        }
+  
+        img{
+          height: 11rem;
+          margin-bottom: 1rem;
+        }
+  
+        h3{
+          color:$white;
+          font-size: 1.6rem;
+          font-weight: normal;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  
+.inventiveness{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $primary-color;
+
+  .image{
+    flex: 30rem;
+    text-align: center;
+
+    img{
+      height: 20rem;
+      width: 30em;
+      border-radius: 40%;
+      margin: 20px;
+    }
+  }
+
+  .content{
+   flex: 42rem;
+     
+    h3{
+      color: $secondary-color;
+      font-size: 4rem;
+      padding-bottom: .5rem;
+      text-align: center;
+    }
+
+   p{
+      font-size: 20px;
+      color:$light-color;
+      line-height: 2;
+      text-align: justify;
+     
+      a {
+        color: $black;
+      }
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+  .footer-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column; 
+   text-align: center;
+
+   h3 {
+     font-size: 50px;
+     font-weight: 200;
+     text-transform: capitalize;
+     margin-bottom: 10px;
+
+    }
+  }
+  
+  .socials {
+    font-size: large;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    li{
+      font-size: 40px;
+      margin: 20px;
+
+    a{
+      text-decoration: none;
+      color: $white;
+    }
+  }
+} 
+
+.footer-bottom {
+  background-color: $black;
+  text-align: center;
+  padding: 20px 0;
+
+  p{
+    font-size: 14px;
+  }
+}
+
+@import "utilities";
+@import "mobile";
+@import "tablet";

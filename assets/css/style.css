@@ -1,0 +1,352 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 70px;
+  color: #3d5b8d;
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: #0d0d0d;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.showcase {
+  background-color: #3d5b8d;
+  color: #fff;
+  height: 600px;
+}
+
+.showcase nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.showcase nav li {
+  padding: 15px;
+}
+
+.showcase nav a {
+  color: #fff;
+}
+
+.showcase nav a:hover {
+  color: #0d0d0d;
+}
+
+.showcase-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.showcase-content img {
+  width: 41%;
+  padding-left: 60px;
+  border-radius: 33%;
+}
+
+.showcase-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.showcase-content .about-me {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.9;
+  margin-top: .7em;
+  overflow: hidden;
+}
+
+.technology-stack {
+  background-color: #314977;
+}
+
+.technology-stack .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+}
+
+.technology-stack .box-container .box {
+  padding: 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  border-radius: .5rem;
+  background: #0d0d0d;
+}
+
+.technology-stack .box-container .box:hover {
+  background: #fff;
+}
+
+.technology-stack .box-container .box:hover h3 {
+  color: #0d0d0d;
+}
+
+.technology-stack .box-container .box img {
+  height: 11rem;
+  margin-bottom: 1rem;
+}
+
+.technology-stack .box-container .box h3 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.inventiveness {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #3d5b8d;
+}
+
+.inventiveness .image {
+  -webkit-box-flex: 30rem;
+      -ms-flex: 30rem;
+          flex: 30rem;
+  text-align: center;
+}
+
+.inventiveness .image img {
+  height: 20rem;
+  width: 30em;
+  border-radius: 40%;
+  margin: 20px;
+}
+
+.inventiveness .content {
+  -webkit-box-flex: 42rem;
+      -ms-flex: 42rem;
+          flex: 42rem;
+}
+
+.inventiveness .content h3 {
+  color: #314977;
+  font-size: 4rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+.inventiveness .content p {
+  font-size: 20px;
+  color: #f4f4f4;
+  line-height: 2;
+  text-align: justify;
+}
+
+.inventiveness .content p a {
+  color: #0d0d0d;
+}
+
+.inventiveness .content p a:hover {
+  color: #314977;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.socials {
+  font-size: large;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials li {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.socials li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 426px) {
+  nav {
+    font-size: small;
+    padding: 13px;
+  }
+  nav .logo {
+    font-size: 13px;
+    margin-right: 6px;
+  }
+  .showcase .about-me {
+    font-size: small;
+  }
+  .showcase img {
+    display: none;
+  }
+  .box {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .showcase {
+    height: 500px;
+  }
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content h1 {
+    font-size: 30px;
+    margin-bottom: 23px;
+  }
+  .showcase img {
+    display: none;
+  }
+  .heading {
+    font-size: 37px;
+  }
+  .technology-stack {
+    padding: 3rem 23%;
+  }
+  .inventiveness {
+    padding: 4rem 3%;
+  }
+  .inventiveness h3 {
+    font-weight: 500;
+  }
+  .image {
+    display: none;
+  }
+  .content p {
+    margin: 20px;
+  }
+  .footer-content h3 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 570px) and (max-width: 810px) {
+  .showcase {
+    height: 500px;
+  }
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .showcase img {
+    display: none;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  section {
+    padding: 4rem 3%;
+  }
+  .content p {
+    margin: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
